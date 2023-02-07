@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testcases>
+<testcase internalid="98" name="Verificar que el método POST/ {{url}} /auth, cree un token de autenticación">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><u><strong>Environment</strong></u><strong>:&nbsp;</strong><span style="line-height: 107%;">Windows 11 Pro v21H2,</span><span style="line-height: 107%;"> </span><span style="line-height: 107%;">Php versi&oacute;n 5.5.30,</span><span style="line-height: 107%;"> </span><span style="line-height: 107%;">Xampp v3.2.2,</span><span lang="ES" style="line-height: 107%;"> Chrome v</span><span style="line-height: 107%;">ersi&oacute;n 109.0.5414.120,</span><span lang="ES" style="line-height: 107%;"> Postman versi&oacute;n 10.9.3</span></span></span></p>
+<p><u><strong><span style="font-size: x-small;"><span style="font-family: Tahoma;">Priority: </span></span></strong></u><span style="font-size: x-small;"><span style="font-family: Tahoma;">Alto</span></span></p>
+<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><u><strong>Description:</strong></u><span style="line-height: 107%;">Este test case verifica que el m&eacute;todo <span style="color: rgb(0, 176, 240);">POST/</span></span><span style="line-height: 107%; color: rgb(0, 176, 240);"> </span><span style="line-height: 107%; color: red;">{{url}}</span><span style="line-height: 107%; color: rgb(0, 176, 240);"> </span></span></span><span style="font-size: x-small;"><span style="line-height: 107%;"><a href="https://restful-booker.herokuapp.com/auth"><span style="font-family: Tahoma;"><span style="color: rgb(0, 176, 240); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/auth</span></span></a></span><span style="font-family: Tahoma;"><span style="line-height: 107%; color: rgb(0, 176, 240); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">, </span><span style="line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">cree un token de autenticaci&oacute;n que luego ser&aacute; validada por el servidor para acceder al m&eacute;todo </span><span style="line-height: 107%;">PUT/<span style="color: red;">{{url}}<b> </b></span>/{id}.</span></span></span></p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li><span style="font-size: x-small;"><span style="font-family: Tahoma;">Configurar el navegador Google Chrome como predeterminado.</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></li>
+    <li><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se debe instalar previamente Postman en el ordenador.</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></li>
+    <li><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">El usuario debe tener acceso a internet.</span></span></span></li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en el link:</span></span></span></p>
+<p class="MsoListParagraphCxSpLast" style="line-height:150%"><a href="https://restful-booker.herokuapp.com/apidoc/#api-Auth-CreateToken"><span style="font-size: x-small;"><span style="font-family: Tahoma;">https://restful-booker.herokuapp.com/apidoc/#api-Auth-CreateToken</span></span></a><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">La p&aacute;gina Restful se carga con todas sus opciones en el navegador predeterminado</span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en Postman y crear una una colecci&oacute;n con el nombre de </span><strong><span style="text-indent: -18pt;">&ldquo;RestfulBooker&rdquo;</span></strong></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se inicia Postman y se crea la colecci&oacute;n &ldquo;RestfulBooker&rdquo;</span></span></p>
+<p class="MsoNormal"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en la colecci&oacute;n <b>ResfulBooker </b>y creamos una <b>petici&oacute;n (Request).</b></span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se visualiza una ventana donde se har&aacute;n las pruebas correspondientes.</span></span></p>
+<p class="MsoNormal"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en el icono <b>&ldquo;&hellip;&rdquo; </b>que est&aacute; al lado de la petici&oacute;n <b>(Request) </b>creada, despu&eacute;s hacer clic en la opci&oacute;n<b> Rename y </b>renombrar como<b> CreateToken.</b></span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se visualiza el cambio de nombre en la petici&oacute;n creada como <b style="font-family: &quot;Arial Narrow&quot;, sans-serif;">CreateToken.</b></span></span></p>
+<p class="MsoNormal"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer click en el icono <b>Environment quick look.</b></span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Se visualiza una ventana donde se ingresar&aacute; la url de la p&aacute;gina<b> RestfulBooker</b></span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Ingresar <b>&ldquo;urlt&rdquo;</b> en el campo: <b>variable, </b>despu&eacute;s copiar &ldquo;https://restful-booker.herokuapp.com/ &rdquo; en el campo<b>: initial value</b> y hacer clic en el icono guardar</span></span></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se guarda la configuraci&oacute;n con &eacute;xito.</span></span></p>
+<p class="MsoNormal"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;<span style="text-indent: -18pt;">Seleccionar la opci&oacute;n <b>POST </b>e ingresar &ldquo;{{urlt}}/auth&rdquo;&nbsp;</span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Se ingresaron los datos y se muestra sin errores</span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en <strong>Body </strong>y copiar lo siguiente:</span></span></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height:150%"><span style="font-size: x-small;"><span style="font-family: Tahoma;">{</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height:150%"><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;username&rdquo;: &ldquo;admin&rdquo;,</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+<p class="MsoListParagraphCxSpMiddle" style="line-height:150%"><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;password&rdquo;: &ldquo;password123&rdquo;</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+<p class="MsoListParagraphCxSpLast" style="line-height:150%"><span style="font-size: x-small;"><span style="font-family: Tahoma;">}</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;Se realiza con &eacute;xito el copiado del username y password para realizar la petici&oacute;n.</span></span></p>
+<p class="MsoNormal"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p><span style="text-indent: -18pt; font-family: &quot;Arial Narrow&quot;, sans-serif;">Hacer clic en <strong>Authorization</strong> y seleccionar en la opci&oacute;n<b> Type: Bearer Token.</b></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Se realiza con &eacute;xito la autorizaci&oacute;n para crear el token.</span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Hacer clic en la opci&oacute;n <b>Body </b>y clic en el bot&oacute;n <b>Send.&nbsp;</b></span></span></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Se visualiza el token en la ventana de resultados mostrando el c&oacute;digo 200 Ok, adem&aacute;s del token generado</span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testcases>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testcases>
+<testcase internalid="120" name="Verificar que el método GET/ {{url}}, devuelva la inf. de las reservas registradas en la API. ">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p><u><strong><span style="font-size: x-small;"><span style="font-family: Tahoma;">Environment:&nbsp;</span></span></strong></u><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Windows 11 Pro v21H2,</span><span style="line-height: 107%;"> </span><span style="line-height: 107%;">Php versi&oacute;n 5.5.30,</span><span style="line-height: 107%;"> </span><span style="line-height: 107%;">Xampp v3.2.2,</span><span lang="ES" style="line-height: 107%;"> Chrome </span><span style="line-height: 107%;">versi&oacute;n 109.0.5414.120,</span><span lang="ES" style="line-height: 107%;"> Postman versi&oacute;n 10.9.3</span></span></span></p>
+<p><u><strong><span style="font-size: x-small;"><span style="font-family: Tahoma;">Priority:</span></span></strong></u><span style="font-size: x-small;"><span style="font-family: Tahoma;"> Alto</span></span></p>
+<p><u><strong><span style="font-size: x-small;"><span style="font-family: Tahoma;">Description:</span></span></strong></u><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;<span style="line-height: 107%;">Este caso de prueba verifica que el m&eacute;todo GET/</span><span style="line-height: 107%;"> <span style="color: red;">{{url}}</span></span><span style="line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">, devuelva la informaci&oacute;n de las reservas registradas en la API</span></span></span></p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se debe instalar previamente Postman en el ordenador.</span></span><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></li>
+    <li><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-align: justify; text-indent: -18pt;">Configurar el navegador Google Chrome como predeterminado.</span></span></span></li>
+    <li><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">El usuario debe tener acceso a internet.</span></span></span></li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en el link &ldquo;</span>https://restful-booker.herokuapp.com/apidoc/#api-Booking-GetBooking&quot;</span></span></p>
+<p class="MsoListParagraph" style="margin-top:12.0pt;mso-add-space:auto;&#10;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">La p&aacute;gina Restful se carga con todas sus opciones en el navegador predeterminado</span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p><span style="text-indent: -18pt; font-family: &quot;Arial Narrow&quot;, sans-serif;"><span style="font-size: x-small;"><span style="font-family: Tahoma;">Hacer clic en Postman.</span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se inicia Postman.</span></span></p>
+<p class="MsoNormal" style="line-height:150%"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en la colecci&oacute;n <b>ResfulBooker </b>y creamos una <b>petici&oacute;n (Request).</b></span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;Se visualiza una ventana donde se har&aacute;n las pruebas correspondientes.</span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="text-indent: -18pt;">Hacer clic en el icono <b>&ldquo;&hellip;&rdquo; </b>que esta al lado de la petici&oacute;n <b>(Request) </b>creada, despu&eacute;s hacer clic en la opci&oacute;n<b> Rename y </b>renombrar como<b> GetBooks.</b></span></span></span></p>
+<p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;&#10;mso-list:l0 level1 lfo1"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">Se visualiza el cambio de nombre en la petici&oacute;n creada como <b style="font-family: &quot;Arial Narrow&quot;, sans-serif;">GetBooks.</b></span></span></p>
+<p class="MsoNormal"><span style="font-family:&quot;Arial Narrow&quot;,sans-serif;&#10;mso-bidi-font-family:Arial"><o:p></o:p></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;"><span style="line-height: 107%;">Seleccionar la opci&oacute;n <b>GET </b>e ingresar <span style="color: red;">&ldquo;{{url}}&rdquo; </span>y hacer clic en el bot&oacute;n S<b>end</b></span></span></span></p>]]></actions>
+	<expectedresults><![CDATA[<p><span style="font-size: x-small;"><span style="font-family: Tahoma;">&nbsp;<span style="line-height: 107%;">Se visualiza los resultados de todas las reservas que se encuentran registrados en la API, adem&aacute;s se muestra el c&oacute;digo 200 Ok.</span></span></span></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testcases>
